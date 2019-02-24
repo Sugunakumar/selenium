@@ -17,7 +17,13 @@ import com.discovery.pages.MyVideosPage;
 public class AddFavoriteTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+
+		String path = System.getProperty("user.dir");
+		System.out.println(path);
+
+		// System.setProperty("webdriver.chrome.driver", "C:\\Users\\suguna
+		// kumar\\eclipse-workspace\\Discovery\\resources\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", path + "\\resources\\drivers\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.discovery.com/");
